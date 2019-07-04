@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/skoch9/meshplot/archive/{{ version }}.tar.gz
-  sha256: 55d198778dd4d353f6214b204caa943d0fffb6900d3d3035622a04c3934676c7
+  sha256: b28bf3ea49511ec08eb1fcdd79324448b8ed79d3b19ec653e3fd142761119dc3
 
 build:
   noarch: python
