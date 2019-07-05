@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/skoch9/meshplot/archive/{{ version }}.tar.gz
-  sha256: b28bf3ea49511ec08eb1fcdd79324448b8ed79d3b19ec653e3fd142761119dc3
+  sha256: f73344b7e474d2115671dd09c2f026d59ca42ca5c5c76c003d6c13bf20ea0dd0
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
