@@ -1,5 +1,5 @@
 {% set name = "meshplot" %}
-{% set version = "v0.1" %}
+{% set version = "v0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/skoch9/meshplot/archive/{{ version }}.tar.gz
-  sha256: f73344b7e474d2115671dd09c2f026d59ca42ca5c5c76c003d6c13bf20ea0dd0
+  sha256: 59866a6c265505efddf2205298c9d5980b133b329fb41ff4938d7ae1ae378935
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
