@@ -1,5 +1,5 @@
 {% set name = "meshplot" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/skoch9/meshplot/archive/v{{ version }}.tar.gz
-  sha256: a550cfdb814913b793bd2407249aef2da690ea0ced8705da2a8feb3c421ebd9b
+  sha256: c527a14d803044b190d6da4a21c8507da1bd8d7dc3d449f771da1f5cf00e6ac9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,9 +35,9 @@ about:
   license: GPL-3.0
   license_file: LICENSE
   license_family: GPL
-  summary: 'Simple, fast, plotting of 3D triangle meshes'
+  summary: Simple, fast, plotting of 3D triangle meshes
 
-  description: 'Simple, fast, plotting of 3D triangle meshes'
+  description: Simple, fast, plotting of 3D triangle meshes
   doc_url: https://github.com/skoch9/meshplot
   dev_url: https://github.com/skoch9/meshplot
 
