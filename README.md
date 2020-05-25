@@ -3,7 +3,7 @@ About meshplot
 
 Home: https://github.com/skoch9/meshplot
 
-Package license: GPL-3.0
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
