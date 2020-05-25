@@ -1,9 +1,9 @@
 {% set name = "meshplot" %}
-{% set version = "v0.4.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: v{{ version }}
 
 source:
   url: https://github.com/skoch9/meshplot/archive/{{ version }}.tar.gz
@@ -33,6 +33,7 @@ test:
 about:
   home: https://github.com/skoch9/meshplot
   license: GPL-3.0
+  license_file: LICENSE
   license_family: GPL
   summary: 'Simple, fast, plotting of 3D triangle meshes'
 
