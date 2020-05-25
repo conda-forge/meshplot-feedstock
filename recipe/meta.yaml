@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: v{{ version }}
+  version: {{ version }}
 
 source:
   url: https://github.com/skoch9/meshplot/archive/{{ version }}.tar.gz
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -32,9 +32,9 @@ test:
 
 about:
   home: https://github.com/skoch9/meshplot
-  license: GPL-3.0
+  license: BSD-3-Clause
   license_file: LICENSE
-  license_family: GPL
+  license_family: BSD
   summary: 'Simple, fast, plotting of 3D triangle meshes'
 
   description: 'Simple, fast, plotting of 3D triangle meshes'
