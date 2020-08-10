@@ -5,7 +5,7 @@ Home: https://github.com/skoch9/meshplot
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple, fast, plotting of 3D triangle meshes
 
