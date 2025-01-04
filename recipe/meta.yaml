@@ -11,22 +11,24 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pythreejs
     - numpy
     - matplotlib-base
     - ipywidgets
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - meshplot
 
